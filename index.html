@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado César Vigenère</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Cifrado César Vigenère</h1>
+
+        <div class="section">
+            <h2>Cifrado</h2>
+            <form id="formCifrar">
+                <label for="mensaje">Mensaje a cifrar:</label><br>
+                <textarea id="mensaje" name="mensaje" rows="4" cols="50" placeholder="Introduce tu mensaje"></textarea><br><br>
+                <label for="clave">Clave:</label><br>
+                <input type="text" id="clave" name="clave" placeholder="Introduce la clave" required><br><br>
+                <button type="submit">Cifrar</button>
+            </form>
+            <p><strong>Resultado Cifrado:</strong> <span id="resultadoCifrado"></span></p>
+        </div>
+
+        <div class="section">
+            <h2>Descifrado</h2>
+            <form id="formDescifrar">
+                <label for="mensaje-descifrar">Mensaje a descifrar:</label><br>
+                <textarea id="mensaje-descifrar" name="mensaje" rows="4" cols="50" placeholder="Introduce tu mensaje cifrado"></textarea><br><br>
+                <label for="clave-descifrar">Clave:</label><br>
+                <input type="text" id="clave-descifrar" name="clave" placeholder="Introduce la clave" required><br><br>
+                <button type="submit">Descifrar</button>
+            </form>
+            <p><strong>Resultado Descifrado:</strong> <span id="resultadoDescifrado"></span></p>
+        </div>
+
+        <div class="section">
+            <h2>Matriz de Letras</h2>
+            <div id="matriz"></div>
+        </div>
+    </div>
+
+    <!-- Enlace al archivo JS externo -->
+    <script src="script.js"></script>
+</body>
+</html>
